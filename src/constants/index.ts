@@ -1,1 +1,1 @@
-export const MOVIE_BASE_URL = 'http://www.omdbapi.com/'
+export const MOVIE_BASE_URL = 'https://www.omdbapi.com/'
