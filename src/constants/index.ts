@@ -1,0 +1,1 @@
+export const MOVIE_BASE_URL = 'http://www.omdbapi.com/'
