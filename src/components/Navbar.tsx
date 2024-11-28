@@ -24,9 +24,9 @@ export default function Navbar(props: NavbarProps) {
           version="1.1"
           id="Layer_1"
           xmlns="http://www.w3.org/2000/svg"
-        //   xmlns:xlink="http://www.w3.org/1999/xlink"
+          //   xmlns:xlink="http://www.w3.org/1999/xlink"
           viewBox="0 0 210.233 210.233"
-        //   xml:space="preserve"
+          //   xml:space="preserve"
           stroke="#ffffff"
         >
           <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -58,11 +58,13 @@ export default function Navbar(props: NavbarProps) {
         </svg>{" "}
         Movie.
       </h1>
-      <form action="">
+      <form action="" onSubmit={(e) => e.preventDefault()}>
         <input
           type="text"
           value={props.searchTerm}
-          onChange={(e) => props.setSearchTerm(e.target.value)}
+          onChange={(e) => {
+            props.setSearchTerm(e.target.value);
+          }}
           className="bg-transparent border placeholder:text-xs border-gray-500 rounded-lg outline-none p-2 text-sm text-gray-500"
           placeholder="search  for a movie"
         />
